@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
-gem 'rails', '~> 5.1.0'
-gem 'rails-i18n'
+gem 'rails', '~> 5.1.2'
+gem 'rails-i18n', '>= 5.0.4'
 gem 'uglifier'
-gem 'jquery-rails'
-gem 'devise'
+gem 'jquery-rails', '>= 4.3.1'
+gem 'devise', '>= 4.3.0'
 gem 'devise-i18n', git: 'https://github.com/tigrish/devise-i18n.git', ref: '2665bce94816fb3d0883e040526921f39e3f5341'
 gem 'therubyracer'
 gem 'mysql2'
@@ -15,7 +15,7 @@ gem 'sanitize'
 gem 'newrelic_rpm'
 gem 'will_paginate'
 gem 'will-paginate-i18n'
-gem 'sass-rails' # Just for the compressor
+gem 'sass-rails' , '>= 5.0.6' # Just for the compressor
 gem 'strip_attributes'
 gem 'redcarpet'
 gem 'ignorable'
@@ -34,7 +34,7 @@ gem 'omniauth-google-oauth2', '>= 0.4.1'
 gem 'detect_language'
 gem 'levenshtein'
 gem "paperclip"
-gem 'fancybox2-rails'
+gem 'fancybox2-rails', '>= 0.2.7'
 gem 'it'
 gem 'rb-readline'
 gem 'ace-rails-ap'
@@ -45,12 +45,12 @@ gem 'byebug', group: [:development, :test]
 
 group :development do
   gem 'bullet'
-  gem 'capistrano', "~> 3.7"
-  gem 'capistrano-rails', "~> 1.2"
-  gem 'capistrano-passenger'
-  gem 'capistrano-bundler', '~> 1.2'
-  gem 'capistrano-rvm'
-  gem 'capistrano3-delayed-job', '~> 1.0'
+  gem 'capistrano', '~> 3.8', '>= 3.8.2'
+  gem 'capistrano-rails', '~> 1.3', '>= 1.3.0'
+  gem 'capistrano-passenger', '>= 0.2.0'
+  gem 'capistrano-bundler', '~> 1.2', '>= 1.2.0'
+  gem 'capistrano-rvm', '>= 0.1.2'
+  gem 'capistrano3-delayed-job', '~> 1.7', '>= 1.7.3'
 end
 
 group :profile do
