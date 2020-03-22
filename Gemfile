@@ -39,7 +39,7 @@ gem 'it'
 gem 'rb-readline'
 gem 'ace-rails-ap'
 gem 'hashie'
-gem 'recaptcha', require: 'recaptcha/rails'
+gem 'recaptcha', '4.3.1'
 
 gem 'byebug', group: [:development, :test]
 
