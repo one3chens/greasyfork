@@ -11,7 +11,7 @@ gem 'devise-i18n', git: 'https://github.com/tigrish/devise-i18n.git', ref: '2665
 gem 'therubyracer'
 gem 'mysql2'
 gem 'diffy'
-gem 'sanitize'
+gem 'sanitize', '>= 5.2.1'
 gem 'newrelic_rpm'
 gem 'will_paginate'
 gem 'will-paginate-i18n'
