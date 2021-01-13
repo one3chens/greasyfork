@@ -132,7 +132,7 @@ GEM
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    hashie (3.5.6)
+    hashie (4.1.0)
     i18n (0.8.6)
     ignorable (0.3.0)
       activerecord (>= 3)
@@ -146,7 +146,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (2.1.0)
-    jwt (1.5.6)
+    jwt (2.2.2)
     levenshtein (0.2.2)
     libv8 (3.16.14.19)
     loofah (2.0.3)
@@ -161,9 +161,9 @@ GEM
     mimemagic (0.3.2)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
-    multi_json (1.12.1)
+    multi_json (1.15.0)
     multi_xml (0.6.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     mysql2 (0.4.8)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -174,26 +174,27 @@ GEM
       mini_portile2 (~> 2.2.0)
     nokogumbo (1.4.13)
       nokogiri
-    oauth2 (1.4.0)
-      faraday (>= 0.8, < 0.13)
-      jwt (~> 1.0)
+    oauth2 (1.4.4)
+      faraday (>= 0.8, < 2.0)
+      jwt (>= 1.0, < 3.0)
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (1.6.1)
-      hashie (>= 3.4.6, < 3.6.0)
+    omniauth (2.0.0)
+      hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
-    omniauth-github (1.3.0)
-      omniauth (~> 1.5)
-      omniauth-oauth2 (>= 1.4.0, < 2.0)
-    omniauth-google-oauth2 (0.5.0)
-      jwt (~> 1.5)
-      multi_json (~> 1.3)
+      rack-protection
+    omniauth-github (2.0.0)
+      omniauth (~> 2.0)
+      omniauth-oauth2 (~> 1.7.1)
+    omniauth-google-oauth2 (0.8.1)
+      jwt (>= 2.0)
+      oauth2 (~> 1.1)
       omniauth (>= 1.1.1)
-      omniauth-oauth2 (>= 1.3.1)
-    omniauth-oauth2 (1.4.0)
-      oauth2 (~> 1.0)
-      omniauth (~> 1.2)
+      omniauth-oauth2 (>= 1.6)
+    omniauth-oauth2 (1.7.1)
+      oauth2 (~> 1.4)
+      omniauth (>= 1.9, < 3)
     orm_adapter (0.5.0)
     paperclip (5.1.0)
       activemodel (>= 4.2.0)
@@ -202,7 +203,9 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
     public_suffix (2.0.5)
-    rack (2.0.3)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.1.2)
@@ -238,7 +241,7 @@ GEM
     rb-readline (0.5.4)
     recaptcha (4.3.1)
       json
-    redcarpet (3.4.0)
+    redcarpet (3.5.1)
     ref (2.0.0)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
@@ -328,16 +331,16 @@ DEPENDENCIES
   levenshtein
   mysql2
   newrelic_rpm
-  omniauth (>= 1.6.0)
-  omniauth-github
-  omniauth-google-oauth2 (>= 0.4.1)
+  omniauth (>= 2.0.0)
+  omniauth-github (>= 2.0.0)
+  omniauth-google-oauth2 (>= 0.5.0)
   paperclip
   public_suffix
   rails (~> 5.1.0)
   rails-i18n
   rb-readline
   recaptcha
-  redcarpet
+  redcarpet (>= 3.5.1)
   ruby-prof
   sanitize
   sass-rails
@@ -354,4 +357,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.3
+   1.17.3
