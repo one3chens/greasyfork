@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.2.7', '>= 5.2.7.1'
 gem 'rails-i18n'
 gem 'uglifier'
 gem 'jquery-rails'
-gem 'devise'
+gem 'devise', '>= 4.4.2'
 gem 'devise-i18n', git: 'https://github.com/tigrish/devise-i18n.git', ref: '2665bce94816fb3d0883e040526921f39e3f5341'
 gem 'therubyracer'
 gem 'mysql2'
