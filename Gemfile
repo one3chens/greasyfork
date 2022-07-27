@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 gem 'rails-i18n'
 gem 'uglifier'
 gem 'jquery-rails'
@@ -23,7 +23,7 @@ gem 'coderay', git: 'https://github.com/JasonBarnabe/coderay.git', branch: 'js-i
 gem 'thinking-sphinx'
 gem 'ts-delayed-delta', git: 'https://github.com/pat/ts-delayed-delta', ref: '0aef2195f3acc1da048f18bc0191c90538565705'
 gem 'delayed_job'
-gem 'delayed_job_active_record'
+gem 'delayed_job_active_record', '>= 4.1.3'
 gem 'daemons'
 gem 'public_suffix'
 gem 'transifex-ruby', git: 'https://github.com/tmaesaka/transifex-ruby.git'
