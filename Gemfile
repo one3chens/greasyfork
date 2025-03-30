@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
-gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 7.0.0'
 gem 'rails-i18n'
 gem 'uglifier'
 gem 'jquery-rails'
@@ -11,11 +11,11 @@ gem 'devise-i18n', git: 'https://github.com/tigrish/devise-i18n.git', ref: '2665
 gem 'therubyracer'
 gem 'mysql2'
 gem 'diffy'
-gem 'sanitize'
+gem 'sanitize', '>= 6.0.0'
 gem 'newrelic_rpm'
 gem 'will_paginate'
 gem 'will-paginate-i18n'
-gem 'sass-rails' # Just for the compressor
+gem 'sass-rails' , '>= 6.0.0' # Just for the compressor
 gem 'strip_attributes'
 gem 'redcarpet'
 gem 'ignorable'
